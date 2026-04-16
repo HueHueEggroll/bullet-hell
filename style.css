@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: rgb(79, 81, 89);
 }
 
 canvas {
@@ -22,6 +23,7 @@ h1, p {
 h1 {
   text-align: center;
   font-size: 50;
+  padding-top: 30;
 }
 
 p {
