@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> 707dotwav ⋆𐙚₊˚⊹♡</title>
-    <!--/////// GOOGLE FONTS ///////-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <!--/////// STYLE SHEET ///////-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <main>
-      <h1>707dotwav</h1>
-      
-      <div id="bullethell">
-        <script src="sketch.js"></script>
-      </div>
-      <p>Use the Arrow Keys to move iAiA around. Press or hold Z to shoot and press X to bomb and clear bullets!
-        <br> L-Shift to focus, slow down, and display your hitbox. <3 </p>
-    </main> 
-  </body>
+  <title> 707dotwav ⋆𐙚₊˚⊹♡</title>
+  <!--/////// GOOGLE FONTS ///////-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <!--/////// STYLE SHEET ///////-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>707dotwav</h1>
+
+    <div id="bullethell">
+      <!-- Layout / constants -->
+      <script src="systems/layout.js"></script>
+
+      <!-- Data -->
+      <script src="data/characterDefs.js"></script>
+      <script src="data/bossDefs.js"></script>
+      <script src="data/patternConfigs.js"></script>
+
+      <!-- Helpers -->
+      <script src="systems/patternHelpers.js"></script>
+      <script src="systems/combatHelpers.js"></script>
+      <script src="systems/gameState.js"></script>
+
+      <!-- Core classes -->
+      <script src="classes/Bullet.js"></script>
+      <script src="classes/BulletEmitter.js"></script>
+      <script src="classes/VisualEmitter.js"></script>
+      <script src="classes/FamiliarEnemy.js"></script>
+      <script src="classes/Player.js"></script>
+      <script src="classes/Boss.js"></script>
+
+      <!-- Effects -->
+      <script src="classes/effects.js"></script>
+
+      <!-- Pattern runners -->
+      <script src="data/patternRunners.js"></script>
+
+      <!-- Main loop -->
+      <script src="sketch.js"></script>
+    </div>
+    <p>Use the Arrow Keys to move iAiA around. Press or hold Z to shoot and press X to bomb and clear bullets!
+      <br> L-Shift to focus, slow down, and display your hitbox. <3 </p>
+  </main>
+</body>
+
 </html>
